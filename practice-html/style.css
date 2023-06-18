@@ -4,6 +4,7 @@ h1 {
 }
 h2 {
     color:rgb(0, 13, 255);
+    text-shadow:rgb(250, 250, 4) 1px 0 10px;
 }
 body {
     background-color: rgb(250, 249, 249);
