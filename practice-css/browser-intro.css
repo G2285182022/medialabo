@@ -31,3 +31,9 @@ div#zentai > div {
 	padding: 5px;
 	background-color: #ffefaf;
 }
+img {
+	float: right;
+	width: 100px;
+	height: 100px;
+	margin: 10px 0 10px 10px;
+}
