@@ -16,20 +16,20 @@ let data = [
 // 練習4-2 メッセージ追加プログラム
 let p4 = document.querySelector('h2#ex42');
 let p5 = document.createElement('p')
-p5.textContent = '写真表と緯度軽度のページです'
+p5.textContent = '写真表と緯度経度のページです'
 p5.style.textEmphasis = 'sesame green'
 p4.insertAdjacentElement('afterend', p5);
-
-
-
 // 練習4-3 写真表作成プログラム
-
-
 // 練習4-4 箇条書き削除プログラム
 p2 = document.querySelectorAll('ul#location > li');
 p2[0].remove();
 p2[1].remove();
 p2[2].remove();
-
 // 練習4-5 箇条書き追加プログラム
-
+let p3 = document.querySelector('ul#location');
+let n4 = [{},{},{},{},{},{},{},{},{},{}];
+for(let n = 0;n<n4.length;n++){   
+    n4[n] = document.createElement('li');
+    n4[n].textContent = data[n].name +'... 緯度：' +data[n].lat + ',経度' + data[n].lng;   
+    p3.insertAdjacentElement('beforeend',n4[n]);
+}
