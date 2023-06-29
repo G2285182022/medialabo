@@ -14,6 +14,12 @@ let data = [
 //// 注意: 以上は編集しないこと!
 
 // 練習4-2 メッセージ追加プログラム
+let p4 = document.querySelector('h2#ex42');
+let p5 = document.createElement('p')
+p5.textContent = '写真表と緯度軽度のページです'
+p5.style.textEmphasis = 'sesame green'
+p4.insertAdjacentElement('afterend', p5);
+
 
 
 // 練習4-3 写真表作成プログラム
