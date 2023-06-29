@@ -26,7 +26,10 @@ p4.insertAdjacentElement('afterend', p5);
 
 
 // 練習4-4 箇条書き削除プログラム
-
+p2 = document.querySelectorAll('ul#location > li');
+p2[0].remove();
+p2[1].remove();
+p2[2].remove();
 
 // 練習4-5 箇条書き追加プログラム
 
