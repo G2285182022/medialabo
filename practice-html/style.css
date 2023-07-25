@@ -12,3 +12,11 @@ body {
 p {
     color:rgb(153, 0, 255);
 }
+.box {
+    background-color: rgba(63, 131, 204, 0.17);
+    border: solid 10px;
+    padding: 5px 5px 5px 5px;
+    display: grid;
+    border-color: rgb(90, 60, 209);
+    margin: 10px;
+}
