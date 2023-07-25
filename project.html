@@ -4,19 +4,65 @@
       <meta charset="utf-8">
       <title>世界の天気</title>
       <script src="weather.js" defer></script>
+      <script src="https://www.nishita-lab.org/web-contents/jsons/openweather/{id}.json
+      "></script>
       <link rel="stylesheet" href="project.css">
       </head>
       <body>
-         <h1>世界の天気（検索結果1件）</h1>
-            <ul><li>緯度: 116.3972</li>
-                <li>経度: 39.9075</li>
-                <li>天気: 曇りがち</li>
-                <li>最低気温: 9.94</li>
-                <li>最高気温: 9.94</li>
-                <li>湿度: 14</li>
-                <li>風速: 2.65</li>
-                <li>風向: 197</li>
-                <li>都市名: 北京市</li>
-            </ul>
+         <h1>世界の天気</h1>
+         <label for="kunimei">都市名</label>
+         <select id="kunimei" name="kunimei">
+            <option value="kunimei">見たい地点の天気は？</option>
+            <option id="1850147" value="tokyo">東京</option>
+            <option id="1816670" value="beijing">北京</option>
+            <option id="5128581" value="new york">ニューヨーク</option>
+            <option id="2147714" value="sydney">シドニー</option>
+            <option id="524901" value="moscow">モスクワ</option>
+            <option id="2643743" value="london">ロンドン</option>
+            <option id="1850147" value="los angels">ロサンゼルス</option>
+            <option id="993800" value="johannesburg">ヨハネスブルク</option>
+            <option id="3451189" value="rio de jineiro">リオデジャネイロ</option>
+            <option id="360630" value="cairo">カイロ</option>
+            <option id="1880252" value="singapore">シンガポール</option>
+            <option id="2968815" value="paris">パリ</option>
+               </select>
+               <button id="btn">検索</button>
+               <table>
+                  <caption class="toshi">東京</caption>
+                  <tbody>
+                     <tr>
+                        <th>緯度：</th>
+                        <td class="lat">35.6895</td>
+                     </tr>
+                     <tr>
+                        <th>経度：</th>
+                        <td class="lon">139.6917</td>
+                     </tr>
+                     <tr>
+                        <th>天気：</th>
+                        <td class="weather">曇りがち</td>
+                     </tr>
+                     <tr>
+                        <th>最低気温：</th>
+                        <td class="temp_min">9.25</td>
+                     </tr>
+                     <tr>
+                        <th>最高気温：</th>
+                        <td class="temp_max">13.77</td>
+                     </tr>
+                     <tr>
+                        <th>湿度：</th>
+                        <td class="humidity">21</td>
+                     </tr>
+                     <tr>
+                        <th>風速：</th>
+                        <td class="speed">6.17</td>
+                     </tr>
+                     <tr>
+                        <th>風向：</th>
+                        <td class="deg">130</td>
+                     </tr>
+                  </tbody>
+               </table>
       </body>
 </html>

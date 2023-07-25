@@ -9,11 +9,11 @@ body {
 th{
     color:rgb(3, 15, 251);
 }
-td{
-    color:rgb(241, 4, 190);
-}
 label{
     color:rgb(9, 182, 27);
+}
+td{
+    color:rgb(241, 4, 190);
 }
 caption{
     background: linear-gradient(to blue);
