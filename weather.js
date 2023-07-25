@@ -72,7 +72,7 @@ console.log('都市名 '+data.name);
     axios.get(url)
           .then(showResult)   
           .catch(showError)   
-          .then(finish);      
+           .then(finish);      
   }
   
   function showResult(resp) {
