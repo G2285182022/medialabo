@@ -61,7 +61,7 @@ console.log('都市名 '+data.name);
   a.addEventListener('click',sendRequest);
   
   function sendRequest(){
-    let s = document.querySelector('select#kuni');
+    let s = document.querySelector('select#kunimei');
     let idx = s.selectedIndex;  
   
     let os = s.querySelectorAll('option');  
