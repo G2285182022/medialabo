@@ -61,7 +61,7 @@ console.log('都市名 '+data.name);
   a.addEventListener('click',sendRequest);
   
   function sendRequest(){
-    let s = document.querySelector('select#kunimei');
+    let s = document.querySelector('select#kuni');
     let idx = s.selectedIndex;  
   
     let os = s.querySelectorAll('option');  
@@ -72,7 +72,7 @@ console.log('都市名 '+data.name);
     axios.get(url)
           .then(showResult)   
           .catch(showError)   
-           .then(finish);      
+          .then(finish);      
   }
   
   function showResult(resp) {
