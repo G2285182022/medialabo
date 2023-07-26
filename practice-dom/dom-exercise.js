@@ -20,6 +20,24 @@ p5.textContent = '写真表と緯度経度のページです'
 p5.style.textEmphasis = 'sesame green'
 p4.insertAdjacentElement('afterend', p5);
 // 練習4-3 写真表作成プログラム
+let img = document.createElement('img');
+img.setAttribute('src', 'taro.png');
+let p = document.createElement('p');
+p.insertAdjacentElement('beforeend', img);
+let div = document.querySelector('div#phototable');
+div.insertAdjacentElement('beforeend',p);
+img = document.createElement('img');
+img.setAttribute('src', 'jiro.png');
+p = document.createElement('p');
+p.insertAdjacentElement('beforeend', img);
+div = document.querySelector('div#phototable');
+div.insertAdjacentElement('beforeend',p);
+img = document.createElement('img');
+img.setAttribute('src', 'hanako.png');
+p = document.createElement('p');
+p.insertAdjacentElement('beforeend', img);
+div = document.querySelector('div#phototable');
+div.insertAdjacentElement('beforeend',p);
 // 練習4-4 箇条書き削除プログラム
 p2 = document.querySelectorAll('ul#location > li');
 p2[0].remove();
